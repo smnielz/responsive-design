@@ -1,0 +1,177 @@
+body{    
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3{
+    margin: .1em;
+}
+
+h1{
+    color: #143774;
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+}
+
+h2{
+    color: #143774;
+    font-size: 1.5rem;
+}
+
+h3{
+    color: #1792D2;
+    font-size: .75rem;
+}
+
+ul a{
+    color: #717171;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+li{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+a{
+    color: #1792D2;
+}
+
+li:last-child{
+    margin-bottom: 0;
+}
+
+ul a:hover,
+ul a:focus{
+    color: #1792D2;
+}
+
+header{
+    text-align: center;
+    background: #F8F8F8;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+article h2{
+    color: #1792D2;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.container{      
+    width: 90%;
+    min-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1em;
+
+}
+
+.comments{
+    color: #707070;
+    font-size: .75rem;
+    order: -2;
+}
+
+.article-img{
+    width: 100%;
+    max-width: 800px;
+    object-fit: contain;
+    order: -3;
+}
+
+.continue-reading{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.aside-p{
+    font-size: 1.1256rem;
+    color: #143774;
+    font-family: 'Lora';
+    font-weight: bold;
+    
+}
+
+.aside-div{    
+    border-bottom: 2px solid #707070;
+    margin-top: 1em;
+}
+
+.aside-div:last-child{
+    border-bottom: none;
+}
+
+.aside-first,
+.aside-second{
+    border: 20px solid #EBEBEB;
+    padding: 1em;
+}
+
+.current-window{
+    border-bottom: 1px solid #717171;
+}
+
+@media (min-width:780px){
+    .container,
+    ul{
+        flex-direction: row;
+    }
+
+    li{
+        margin-bottom: 0;
+    }
+
+    main{
+        width: 60%;
+    }
+
+    header{
+        text-align: left;
+    }
+
+    aside{        
+        width: 35%;
+    }
+
+    .small-img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .article-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .article-div1{
+        width: 150px;
+        padding-right: 1em;
+    }
+
+}
+
